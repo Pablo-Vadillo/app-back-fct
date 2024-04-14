@@ -1,1 +1,26 @@
-<p>menu works!</p>
+<div class="calendar-container">
+    <form (submit)="saveActivity(); $event.preventDefault();">
+      <mat-form-field appearance="fill">
+        <mat-label>Selecciona Fecha</mat-label>
+        <input matInput [matDatepicker]="picker" [formControl]="date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Actividad</mat-label>
+        <input matInput [formControl]="activity" placeholder="Escribe aqui tu actividad">
+      </mat-form-field>
+  
+      <div class="button-container">
+        <button mat-raised-button type="submit">Guarda Actividad</button>
+      </div>
+    </form>
+  
+    <div class="activity-list">
+      <div *ngFor="let act of activities" class="activity-item">
+        <span>{{ act.date }}: {{ act.activity }}</span>
+      </div>
+    </div>
+  </div>
+cls  

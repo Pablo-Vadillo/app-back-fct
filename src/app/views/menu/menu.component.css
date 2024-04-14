@@ -1,0 +1,29 @@
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .activity-list {
+    margin-top: 20px;
+  }
+  
+  .activity-item {
+    background-color: #e3f2fd;
+    border: 1px solid #90caf9;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
