@@ -19,7 +19,7 @@ export class LoginComponent {
 
   onLogin() {
     if (this.loginForm.valid) {
-      // Logi Autenticacion
+      
       this.router.navigate(['/menu']);
     } else {
       console.log('Form is not valid');
